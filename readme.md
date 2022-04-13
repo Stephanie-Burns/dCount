@@ -1,7 +1,7 @@
 # dCount
 An ASCII based place counter application for windows.
 
-IMG
+![main](https://user-images.githubusercontent.com/87616660/163109905-89b30c4a-217e-4537-bff2-c5d027e1c800.jpg)
 
 ## Usage
 To run the application, download "dCount.exe" and double click to execute.
@@ -9,7 +9,8 @@ To run the application, download "dCount.exe" and double click to execute.
 
 ### Commands
 
-IMG
+![commands](https://user-images.githubusercontent.com/87616660/163109937-3809379e-6f94-499c-8f1f-45b9c8afdece.jpg)
+
 
 The currently supported commands are:
 
