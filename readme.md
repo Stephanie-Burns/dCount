@@ -1,7 +1,7 @@
 # dCount
 An ASCII based place counter application for windows.
 
-![main](https://user-images.githubusercontent.com/87616660/163109905-89b30c4a-217e-4537-bff2-c5d027e1c800.jpg)
+IMG
 
 ## Usage
 To run the application, download "dCount.exe" and double click to execute.
@@ -9,16 +9,17 @@ To run the application, download "dCount.exe" and double click to execute.
 
 ### Commands
 
-![commands](https://user-images.githubusercontent.com/87616660/163109937-3809379e-6f94-499c-8f1f-45b9c8afdece.jpg)
-
+IMG
 
 The currently supported commands are:
 
-- (any)  You may utilize any key not reserved to **add ONE** to the current value.
-- "\*"   Usage, **add TEN** to the current value.
-- "-"    Usage, **subtract ONE** from the current value.
-- "/"    Usage, **subtract TEN** from the current value.
 - "R"    Will clear the register and set the current value to **ZERO**.
+- (any)  You may utilize any key not reserved to **add ONE** to the current value.
+- "-"    Usage, **subtract ONE** from the current value.
+- "\*"   Usage, **add TEN** to the current value.
+- "/"    Usage, **subtract TEN** from the current value.
+- "\*\*"   Usage, **add 100** to the current value.
+- "//"   Usage, **subtract TEN** from the current value.
 
 ## Build
 - g++ (x86_64-win32-seh-rev0, Built by MinGW-W64 project) 8.1.0
