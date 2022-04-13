@@ -15,13 +15,13 @@ To run the application, download "dCount.exe" and double click to execute.
 
 The currently supported commands are:
 
-- "R"    Will clear the register and set the current value to **ZERO**.
-- (any)  You may utilize any key not reserved to **add ONE** to the current value.
-- "-"    Usage, **subtract ONE** from the current value.
-- "\*"   Usage, **add TEN** to the current value.
-- "/"    Usage, **subtract TEN** from the current value.
-- "\*\*"   Usage, **add 100** to the current value.
-- "//"   Usage, **subtract TEN** from the current value.
+<pre>"R"        Will clear the register and set the current value to **ZERO**.</pre>
+<pre>(any)      You may utilize any key not reserved to **add ONE** to the current value.</pre>
+<pre>"-"        Usage, **subtract ONE** from the current value.</pre>
+<pre>"*"        Usage, **add TEN** to the current value.</pre>
+<pre>"/"        Usage, **subtract TEN** from the current value.</pre>
+<pre>"**"       Usage, **add 100** to the current value.</pre>
+<pre>"//"       Usage, **subtract TEN** from the current value.</pre>
 
 ## Build
 - g++ (x86_64-win32-seh-rev0, Built by MinGW-W64 project) 8.1.0
