@@ -13,12 +13,11 @@
 
 class DCount
 {
-// private:
 public:
+    const std::vector<std::string> special_commands = 
+    {"R", "-", "*", "/", "**", "//"};
     std::vector<int> place_values = {0, 0, 0, 0};
     std::string previous_command;
-    std::vector<std::string> special_commands = 
-    {"R", "-", "*", "/"};
     int count = 0;
 
 
@@ -121,6 +120,7 @@ public:
                     count = 9999;
                 }
                 break;
+
             case 3:                                       // Subtract ten: "/"
                 set_previous_command("/");
                 if(count > 10)
@@ -132,6 +132,31 @@ public:
                     count = 0;
                 }
                 break;
+
+            case 4:                                            // Add 100: "/"
+                set_previous_command("**");
+                if(count < 9900)
+                {
+                    count += 100;
+                }
+                else
+                {
+                    count = 9999;
+                }
+                break;
+
+            case 5:                                       // Subtract 100: "/"
+                set_previous_command("//");
+                if(count > 100)
+                {
+                    count -= 100;
+                }
+                else
+                {
+                    count = 0;
+                }
+                break;
+
             case -1:
                 set_previous_command("(any)");  // Add one: any key not listed
                 if(count < 9999)
@@ -143,6 +168,7 @@ public:
                     count = 9999;
                 }
                 break;   
+
             default:                                                  // ERROR
             {
                 // Something went horribly wrong if this triggers, good luck.
