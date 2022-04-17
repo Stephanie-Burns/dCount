@@ -6,7 +6,6 @@ An ASCII based place counter application for windows.
 
 ## Usage
 To run the application, download "dCount.exe" and double click to execute.
-*note: This app generates a last seen file, so it is recommended to put the app inside of a folder if you choose not to download the whole repository.* 
 
 ### Commands
 
