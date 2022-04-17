@@ -23,7 +23,7 @@ The currently supported commands are:
 <pre>"//"       Usage, **subtract TEN** from the current value.</pre>
 
 ## Build
-- Compiled with *g++* for *C++ 17*
+- Compiled with *MSVC* for *C++ 17*
 - Compatable for: Windows 8+
 
 ## Conclusion
