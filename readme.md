@@ -1,5 +1,5 @@
 # dCount
-An ASCII based place counter application for windows.
+An ASCII themed place counter application for windows.
 
 ![main](https://user-images.githubusercontent.com/87616660/163194069-faa75e56-21cc-472c-b518-084c952ba73a.jpg)
 
