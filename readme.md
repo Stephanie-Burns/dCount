@@ -23,8 +23,8 @@ The currently supported commands are:
 <pre>"//"       Usage, **subtract TEN** from the current value.</pre>
 
 ## Build
-- g++ (x86_64-win32-seh-rev0, Built by MinGW-W64 project) 8.1.0
-- Win10
+- Compiled with *g++* for *C++ 17*
+- Compatable for: Windows 8+
 
 ## Conclusion
 Thank you for taking the time to review the readme, if you have any questions feel free to message my twitter bot, @BotJarrod or my gmail at ta747839@gmail.com
