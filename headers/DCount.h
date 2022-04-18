@@ -72,97 +72,50 @@ public:
 
 
     void deviate_count(std::string user_input)
-        // Increments or decrements the count based on the users input.
+        // Increments or decrements the count based on user input.
         // Range 0 < 10,000
     {
         int i = parse_user_input(user_input);
 
         switch (i)
         {
-        case 0:                                              // Reset: "R"
+        case 0:     // Reset
             set_previous_command("R");
             count = 0;
             break;
 
-        case 1:                                       // Subtract ONE: "-"
+        case 1:     // Sub (1)
             set_previous_command("-");
-            if (count > 0)
-            {
-                count -= 1;
-            }
-            else
-            {
-                count = 0;
-            }
+            count < 1       ?   count = 0   :   --count;
             break;
 
-        case 2:                                            // Add TEN: "*"
+        case 2:     // Add (10)
             set_previous_command("*");
-            if (count < 9990)
-            {
-                count += 10;
-            }
-            else
-            {
-                count = 9999;
-            }
+            count > 9998    ?  count = 9999 :   count += 10;
             break;
 
-        case 3:                                       // Subtract TEN: "/"
+        case 3:     // Sub (10)
             set_previous_command("/");
-            if (count > 10)
-            {
-                count -= 10;
-            }
-            else
-            {
-                count = 0;
-            }
+            count < 10      ?  count = 0    :   count -= 10;
             break;
 
-        case 4:                                            // Add 100: "/"
+        case 4:     // Add (100)
             set_previous_command("**");
-            if (count < 9900)
-            {
-                count += 100;
-            }
-            else
-            {
-                count = 9999;
-            }
+            count > 9900    ?  count = 9999 :   count += 100;
             break;
 
-        case 5:                                       // Subtract 100: "/"
+        case 5:     // Sub (100)
             set_previous_command("//");
-            if (count > 100)
-            {
-                count -= 100;
-            }
-            else
-            {
-                count = 0;
-            }
+            count < 100     ?  count = 0    :   count -= 100;
             break;
 
-        case -1:
-            set_previous_command("(any)");  // Add ONE: any key not listed
-            if (count < 9999)
-            {
-                count += 1;
-            }
-            else
-            {
-                count = 9999;
-            }
+        default:    // Add (1)
+            set_previous_command("(any)");
+            count > 9998    ?  count = 9999 :   ++count;
             break;
-
-        default:                                                  // ERROR
-        {
-            std::cerr << "[ERROR] Unrecognized Command";
-            break;
-        }
-
         };
+
         set_segment_values();
+
     }
 };
